@@ -6,9 +6,9 @@
 // triangle strips.
 layout(points) in;					// size 1
 layout(lines) in;					// size 2
-layout(triangles) in;				// size 3
-layout(line_adjacency) in;			// size 4
-layout(triangles_adjacency) in;		// size 6
+layout(triangles) in;					// size 3
+layout(line_adjacency) in;				// size 4
+layout(triangles_adjacency) in;				// size 6
 
 layout(triangle_strip, max_vertices = 3) out;
 
@@ -19,7 +19,7 @@ in int gl_InvocationID;	// used for instancing
 
 out int gl_PrimitiveID;
 out int gl_Layer;			// used for layered rendering
-out int gl_ViewportIndex;	// viewport array index;
+out int gl_ViewportIndex;		// viewport array index;
 
 in gl_PerVertex {
 	vec4 gl_Position;
@@ -36,10 +36,10 @@ out gl_PerVertex
 	float gl_CullDistance[];
 };
 
-in vec4 position[];		// out vec4 position from previous state
+in vec4 position[];			// out vec4 position from previous state
 in vec3 normal[];			// out vec4 normal from previous state
 in vec4 color[];			// out vec4 color from previous state
-in vec2 tex_coord[];		// out vec2 tex_coord from previous state
+in vec2 tex_coord[];			// out vec2 tex_coord from previous state
 
 /*
 interface block output from previous stage
