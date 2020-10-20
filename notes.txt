@@ -1,0 +1,3 @@
+When generating cubemap with framebuffer dimensions most be square i.e. width = height
+don't use mipmap filters on cubemap when no mipmap levels generated
+disable back face culling when rendering from inside cubemap
